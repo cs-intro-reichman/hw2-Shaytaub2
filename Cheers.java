@@ -9,7 +9,7 @@ public class Cheers {
         int count = Integer.parseInt(args[1]);
         System.out.println(cheer);
         int countA = cheer.length();//how many letter do i have in the cheer?
-        String spacialLatter = "ABEFHILMNOR";
+        String spacialLatter = "ABEFHILMNORSX";
         for (int i=0; i<countA; i++)
         {
                 char letter = cheer.charAt(i);
