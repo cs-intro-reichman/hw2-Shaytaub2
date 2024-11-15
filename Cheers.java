@@ -22,7 +22,7 @@ public class Cheers {
                 }
         }
         System.out.println("What does that spell?");
-        for (int j=0; j<countA;j++)
+        for (int j=0; j<count;j++)
         {
                 System.out.println(cheer + "!!!");
         }

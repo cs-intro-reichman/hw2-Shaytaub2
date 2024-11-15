@@ -33,6 +33,6 @@ public class CalcPi {
 			}
 		}
 		pi = pi*4;
-		System.out.print("pi, approximated:	 " + pi);
+		System.out.print("pi, approximated:     " + pi);
 	}
 }
