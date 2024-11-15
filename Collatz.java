@@ -6,27 +6,27 @@ public class Collatz {
 		char mode = args[1].charAt(0);
 		int x;
 		int count;
-		int countB =0;
-		for (int i=0; i<seed; i++)
+		int countB =0;// To track successful sequences
+		for (int i=0; i<seed; i++) // Loop over all seeds from 1 to the input seed value
 		{
 			x = i+1;
-			count = 1;
+			count = 0; // Step counter
 			String arr = "" + x;
 			while (x>1)
 			{
+				count++;
 				if (x%2==0)
 				{
 					x = x/2;
 					arr = arr + " " + x;
-					count = count + 1;
 				}
 				else
 				{
 					x = x*3+1;
 					arr = arr + " " + x;
-					count = count + 1;
 				}
 			}
+			count++; // Account for reaching 1
 			arr = arr + " (" + count + ")";
 			if (x==1) {countB++;}
 			if (mode =='v')
