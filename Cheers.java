@@ -1,14 +1,14 @@
 // Prints a crowd cheering output.
 public class Cheers {
-        /**
-         * @param args
-         */
         public static void main(String[] args) {
         String cheersIn = args [0];
         String cheer = cheersIn.toUpperCase();
         int count = Integer.parseInt(args[1]);
-        System.out.println(cheer);
         int countA = cheer.length();//how many letter do i have in the cheer?
+        if (count!=0)
+        { 
+                System.out.println(cheer);
+        }
         String spacialLatter = "ABEFHILMNORSX";
         for (int i=0; i<countA; i++)
         {
