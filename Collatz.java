@@ -7,7 +7,7 @@ public class Collatz {
 		int x;
 		int count;
 		int countB =1;// To track successful sequences
-		if (seed>0 && mode == 'v'){System.out.println("1 2 4 1 (4)");};
+		if (seed>0 && mode == 'v'){System.out.println("1 4 2 1 (4)");};
 		for (int i=1; i<seed; i++) // Loop over all seeds from 1 to the input seed value
 		{
 			x = i+1;
